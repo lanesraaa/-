@@ -1,0 +1,22 @@
+class Element {
+public:
+    vector<string> getMaxSequence(string input) {
+        if(s.size() < 3)   return {};
+
+        vector<string> res;
+        unordered_map<string, int> hash;
+        size_t first = 0;
+        size_t last = 3;
+        while(last <= input.size())
+        {
+            auto str = input.substr(first, last - first);
+            if(hash[str] == 1)
+                res.emplace_back(str);
+            ++hash[str];
+            ++first;
+            ++last;
+        }
+        return res;
+    }
+};
+
