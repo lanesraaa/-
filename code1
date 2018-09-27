@@ -1,0 +1,8 @@
+@Data 
+class Mapping { 
+ private int bIndex; 
+ private int aIndex; 
+private int value; 
+}; 
+public Mapping[] genMapping(int[] a, int[] b) { 
+} 
