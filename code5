@@ -1,0 +1,13 @@
+int getOptimal(int* a, int from, int to, bool* b, int m){   
+if(from>to)   
+return m;    
+int i,j;    
+i = getOptimal(a,from+1,to,b,m-a[from]);    
+j = getOptimal(a,from+1,to,b,m);    
+if(fabs(k)<fabs(t))    {        
+b[from] = true;        
+return getOptimal(a,from+1,to,b,m-a[from]);   
+}    
+else    {       
+b[from] = false;        
+return getOptimal(a,from+1,to,b,m);    }
